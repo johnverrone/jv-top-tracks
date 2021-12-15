@@ -80,13 +80,16 @@ export default function Tracks() {
         })}
       </motion.ol>
       <div className="playlist-recap">
-        <p>hope you enjoyed. access to the full playlists here:</p>
+        <p>
+          hope you enjoyed.
+          <br />
+          access to the full playlist here:
+        </p>
         <ul className="playlist-links">
           <li>
-            <a>spotify link</a>
-          </li>
-          <li>
-            <a>apple music link</a>
+            <a href="https://open.spotify.com/playlist/0OTdOWfMSlXzqWmEMiyYOQ">
+              spotify
+            </a>
           </li>
         </ul>
       </div>

@@ -57,9 +57,13 @@
   margin: 50px auto;
 }
 
+.playlist-recap {
+  margin-top: 100px;
+  text-align: center;
+}
+
 .playlist-links {
+  margin-top: 50px;
   list-style-type: none;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
