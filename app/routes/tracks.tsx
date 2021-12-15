@@ -66,7 +66,7 @@ export default function Tracks() {
                     className="spotify-player"
                     ref={(el) => (itemRefs.current[idx] = el)}
                   >
-                    <SpotifyPlayer spotifyId={spotify} />
+                    <SpotifyPlayer spotifyId={spotify} large={idx < 5} />
                   </div>
                 )}
               </div>
