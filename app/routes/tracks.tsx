@@ -70,10 +70,12 @@ export default function Tracks() {
                   </div>
                 )}
               </div>
-              <div className="listeners-notes-wrapper">
-                <h4>jv's notes</h4>
-                <p className="listeners-notes">{notes}</p>
-              </div>
+              {notes && (
+                <div className="listeners-notes-wrapper">
+                  <h4>jv's notes</h4>
+                  <p className="listeners-notes">{notes}</p>
+                </div>
+              )}
               <hr className="divider" />
             </motion.li>
           );

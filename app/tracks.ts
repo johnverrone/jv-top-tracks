@@ -31,9 +31,8 @@ export async function getTracks() {
       title: row[0],
       artist: row[1],
       album: row[2],
-      art: row[3],
-      spotify: row[4],
-      notes: row[5],
+      spotify: row[3],
+      notes: row[4],
     }));
   }
 

@@ -1,3 +1,7 @@
+.remix-app {
+  overflow-x: hidden;
+}
+
 .wrapper {
   margin-bottom: 50vh;
 }

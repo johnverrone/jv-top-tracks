@@ -1,5 +1,8 @@
 import { Link, MetaFunction } from 'remix';
 import { useRef } from 'react';
+import indexStyles from '~/styles/index.css';
+
+export const links = () => [{ rel: 'stylesheet', href: indexStyles }];
 
 export const meta: MetaFunction = () => {
   return {
@@ -13,6 +16,7 @@ export default function Index() {
   return (
     <main>
       <h2>ahh yee. music week 2021 is here.</h2>
+      <br />
       <p>
         stoked you're here to check out the pop bops, tiktok trends, and sad boi
         rock that's been pumpin thru my brain this year.
@@ -22,13 +26,16 @@ export default function Index() {
         this whole website might seem over the top. but u kno i gotta keep it
         spicy 🌶
       </p>
+      <br />
       <p>
         enjoy,
         <br />
         <br />
         jv
       </p>
-      <Link to="/tracks">begin &gt;</Link>
+      <div className="begin-button">
+        <Link to="/tracks">begin &gt;</Link>
+      </div>
     </main>
   );
 }
