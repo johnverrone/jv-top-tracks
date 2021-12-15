@@ -1,0 +1,65 @@
+.wrapper {
+  margin-bottom: 50vh;
+}
+
+.track-list {
+  list-style-type: none;
+  padding: 0;
+  margin-block-end: 40px;
+}
+
+/* .track {
+} */
+
+.track-metadata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rank {
+  text-transform: uppercase;
+  font-size: 100px;
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  color: hsla(0 0% 0% / 0.8);
+}
+
+.album-art {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.artist {
+  font-size: 0.75rem;
+}
+
+.spotify-player {
+  position: relative;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.listeners-notes-wrapper {
+  margin-top: 20px;
+}
+
+.divider {
+  border-color: black;
+  width: 40%;
+  margin: 50px auto;
+}
+
+.playlist-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
