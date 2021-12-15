@@ -72,7 +72,7 @@ export default function Tracks() {
               </div>
               {notes && (
                 <div className="listeners-notes-wrapper">
-                  <h4>jv's notes</h4>
+                  <h4 className="listener-title">jv's notes</h4>
                   <p className="listeners-notes">{notes}</p>
                 </div>
               )}
