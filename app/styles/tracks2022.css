@@ -1,0 +1,12 @@
+:root {
+  --color-foreground: white;
+  --color-background: #222;
+  --color-links: white;
+  --color-links-hover: hsl(345, 51%, 49%);
+  --color-border: purple;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

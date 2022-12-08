@@ -9,7 +9,7 @@ export type Track = {
   notes?: string;
 };
 
-export async function getTracks() {
+export async function getTracks(year: string) {
   const scopes = ['https://www.googleapis.com/auth/spreadsheets.readonly'];
   const jwt = new google.auth.JWT(
     process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
@@ -21,7 +21,7 @@ export async function getTracks() {
   const sheets = google.sheets({ version: 'v4', auth: jwt });
   const response = await sheets.spreadsheets.values.get({
     spreadsheetId: process.env.SPREADSHEET_ID,
-    range: '2021',
+    range: year,
   });
 
   const rows = response.data.values;

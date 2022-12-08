@@ -135,9 +135,9 @@ function Layout({ children }: { children: React.ReactNode }) {
           </nav>
         </div>
       </header>
-      <div className="remix-app__main">
-        <div className="container remix-app__main-content">{children}</div>
-      </div>
+      <main className="remix-app__main">
+        <div className="container">{children}</div>
+      </main>
     </div>
   );
 }
