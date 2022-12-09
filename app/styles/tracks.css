@@ -6,6 +6,10 @@
   margin-bottom: 50vh;
 }
 
+.intro {
+  margin-bottom: 3rem;
+}
+
 .track-list {
   list-style-type: none;
   padding: 0;

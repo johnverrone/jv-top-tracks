@@ -126,15 +126,18 @@ function Layout({ children }: { children: React.ReactNode }) {
           <nav aria-label="Main navigation" className="remix-app__header-nav">
             <ul>
               <li>
-                <Link to="/tracks">tracks</Link>
+                <Link to="/2021">2021</Link>
+              </li>
+              <li>
+                <Link to="/2022">2022</Link>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-      <div className="remix-app__main">
-        <div className="container remix-app__main-content">{children}</div>
-      </div>
+      <main className="remix-app__main">
+        <div className="container">{children}</div>
+      </main>
     </div>
   );
 }

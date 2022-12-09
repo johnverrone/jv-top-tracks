@@ -9,7 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 export const links = () => [{ rel: 'stylesheet', href: tracksStyles }];
 
 export const loader = () => {
-  return getTracks();
+  return getTracks('2021');
 };
 
 export const meta: MetaFunction = () => {
@@ -41,6 +41,26 @@ export default function Tracks() {
 
   return (
     <div className="wrapper">
+      <div className="intro">
+        <h2>ahh yee. music week 2021 is here.</h2>
+        <br />
+        <p>
+          stoked you're here to check out the pop bops, tiktok trends, and sad
+          boi rock that's been pumpin thru my brain this year.
+        </p>
+        <br />
+        <p>
+          this whole website might seem over the top. but u kno i gotta keep it
+          spicy 🌶
+        </p>
+        <br />
+        <p>
+          enjoy,
+          <br />
+          <br />
+          <b>jv</b>
+        </p>
+      </div>
       <motion.ol className="track-list">
         {tracks.map((track, idx) => {
           const rank = idx + 1;
